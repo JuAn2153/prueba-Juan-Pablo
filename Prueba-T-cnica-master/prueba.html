@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="prueba.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Prueba Técnica Juan Pablo</p>
+
+    <div class="input">
+        <input type="text" name="campo" id="campo" class="form-control" value="" placeholder="ingresa el valor"
+            onInput="validarInput()" onkeypress='return campoNumerico(event)' />
+    </div>
+
+    <p>¿Qué operación deseas realizar con los números?</p>
+
+    <div class="select">
+        <select name="opciones" id="opciones">
+
+            <option value="sinOpcion">Elige una Opción</option>
+
+            <option value='MayorMenor'>Mayor a menor</option>
+
+            <option value='MenorMayor'>Menor a mayor</option>
+
+            <option value='SumarTodos'>Sumar todos</option>
+
+            <option value='MultiMismo'>Multiplicar cada número por sí mismo</option>
+
+        </select>
+    </div>
+
+    <div>
+        <button type="submit" name="add_to_cart" id="botónValidar" onclick="data()"  value="Enviar">Enviar</button>
+    </div>
+
+    <div>
+        <button id="calcular" onclick="seleccion();" >calcular</button>
+    </div>
+
+    <p>Éste es el resultado: </p>
+    
+    <p id="resultados"></p>
+
+    <script src="prueba.js"></script>
+</body>
+
+</html>
